@@ -4,9 +4,9 @@
 	  function getUserData()
 	  {
 	    $this->load->database();
-	    $result = $this->db->query("select * from user where role='ROLE_USER' ");
+	    $result = $this->db->query("select * from user");
 	    // echo "<pre>";
-	    return $result->result();
+	    return $result->result_array();
 	  }
 }
 ?>

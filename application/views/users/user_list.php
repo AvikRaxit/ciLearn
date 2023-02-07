@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
   </head>
   <body>
     <h1>User Details</h1>
@@ -24,8 +25,8 @@
                 <?php foreach($allusers as $user): ?>
                 <tr>
                   <th scope="row"><?php echo ++$count ?></th>
-                  <td><?php echo $user->name ?></td>
-                  <td><?php echo $user->role ?></td>
+                  <td><?php echo $user['name'] ?></td>
+                  <td><?php echo $user['role'] ?></td>
                 </tr>
                 <?php endforeach; ?>
             <?php endif ?> 
